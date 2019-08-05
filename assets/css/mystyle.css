@@ -1,0 +1,142 @@
+/*#banners div {
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    background: #f65050;
+}
+
+#banners div:first-child {
+    background: #7ddda3;
+}
+
+#banners div:last-child {
+    background: #506ff6;
+}
+
+@media only screen and (max-width: 48em) {
+
+    .subcontent,
+    aside span {
+        display: none;
+    }
+
+    aside .img-aside {
+        display: block;
+        margin: 0 auto;
+    }
+
+    aside div {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    aside .img-aside {
+        float: left;
+    }
+}
+*/
+
+
+/* mobile-first */
+#site-nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+#site-nav li {
+    display: inline-block;
+    /*margin: 0 5%;*/
+    line-height: 1.5;
+}
+
+#site-nav li a {
+    display: block;
+    border-top: 1px solid #CCC;
+    padding: 3%;
+}
+
+#site-nav li:last-child a {
+    border-bottom: 1px solid #CCC;
+}
+
+
+#logo {
+    text-align: center;
+    clear: both;
+}
+
+
+#link-to-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.menu-item a {
+    display: block;
+    border-top: 1px solid #CCC;
+    padding: 3%;
+}
+
+.menu-item:last-child a {
+    border-bottom: 1px solid #CCC;
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) {
+    #site-nav ul {
+        width: 70%;
+        float: right;
+    }
+
+    #logo {
+        float: left;
+        width: 30%;
+        clear: none;
+    }
+}
+
+/* tablet and desktop */
+@media only screen and (min-width: 768px) {
+    #site-nav {
+        position: absolute;
+        top: 0;
+        left: 30%;
+        width: 70%;
+    }
+
+    #link-to-menu {
+        display: none;
+    }
+
+    #site-nav li {
+        display: inline-block;
+        margin: 0 5%;
+        padding: 0;
+        width: 18%;
+        border: none;
+        line-height: 1.5;
+    }
+
+    #site-nav li a {
+        display: inline;
+        border: none;
+        padding: 0;
+    }
+
+    #site-nav li a,
+    #site-nav li:last-child a {
+        border: none;
+    }
+}
+
+
